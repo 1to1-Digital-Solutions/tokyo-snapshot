@@ -19,6 +19,11 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
+  "table": {
+    "indicator": "Indicator",
+    "figure": "Figure",
+    "note": "Note"
+  },
   "footer": {
     "tagline": "A compilation of public statistics. Data sourced from official and internationally recognized organizations.",
     "sourcesTitle": "Data sources",

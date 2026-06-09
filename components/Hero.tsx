@@ -15,6 +15,9 @@ export default function Hero({ heroStats }: { heroStats: HeroStat[] }) {
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    // Respect reduced-motion: leave content in its visible default state.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
     const ctx = gsap.context(() => {
       gsap.set('[data-hero]', { opacity: 0, y: 20 })
       gsap.set('[data-hero-badge]', { opacity: 0, y: 16, scale: 0.95 })

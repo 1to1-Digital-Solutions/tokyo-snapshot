@@ -89,7 +89,7 @@ export default function Navbar({ navLinks }: { navLinks: NavLink[] }) {
       {/* Dropdown menu */}
       <div
         id={menuId}
-        aria-hidden={!isOpen}
+        inert={!isOpen}
         className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-screen animate-slide-down' : 'max-h-0'}`}
       >
         <div className="bg-surface-subtle/98 backdrop-blur-md border-t border-border-default px-4 py-4">

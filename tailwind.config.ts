@@ -29,8 +29,8 @@ const config: Config = {
           primary: '#ffffff',
           secondary: '#e5e7eb',
           muted: '#9ca3af',
-          subtle: '#6b7280',
-          faint: '#374151',
+          subtle: '#868d99', // AA on dark surfaces (was #6b7280, ~3.9:1 on raised)
+          faint: '#787f8b', // AA on dark surfaces (was #374151, ~1.9:1)
         },
         // Tokio Red – primary accent
         primary: {

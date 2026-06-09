@@ -19,6 +19,11 @@
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
   },
+  "table": {
+    "indicator": "Indicador",
+    "figure": "Cifra",
+    "note": "Nota"
+  },
   "footer": {
     "tagline": "Recopilación de estadísticas públicas. Los datos provienen de fuentes oficiales y organizaciones internacionales reconocidas.",
     "sourcesTitle": "Fuentes de datos",

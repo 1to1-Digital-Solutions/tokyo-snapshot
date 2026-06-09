@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server'
 import type { StatRow } from '@/lib/stats'
 
 interface StatsTableProps {
@@ -5,7 +6,8 @@ interface StatsTableProps {
   caption?: string
 }
 
-export default function StatsTable({ rows, caption }: StatsTableProps) {
+export default async function StatsTable({ rows, caption }: StatsTableProps) {
+  const t = await getTranslations('table')
   const hasNotes = rows.some((row) => row.note)
 
   return (
@@ -18,20 +20,20 @@ export default function StatsTable({ rows, caption }: StatsTableProps) {
               scope="col"
               className="text-left px-5 py-3 text-xs font-semibold text-text-subtle uppercase tracking-widest w-1/2"
             >
-              Indicador
+              {t('indicator')}
             </th>
             <th
               scope="col"
               className="text-left px-5 py-3 text-xs font-semibold text-text-subtle uppercase tracking-widest"
             >
-              Cifra
+              {t('figure')}
             </th>
             {hasNotes && (
               <th
                 scope="col"
                 className="text-left px-5 py-3 text-xs font-semibold text-text-subtle uppercase tracking-widest hidden sm:table-cell"
               >
-                Nota
+                {t('note')}
               </th>
             )}
           </tr>

@@ -16,6 +16,12 @@ export default function AnimatedBar({ value, color = 'red', className = '' }: An
     const bar = barRef.current
     if (!bar) return
 
+    // Respect reduced-motion: jump straight to the final width, no animation.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      gsap.set(bar, { width: `${value}%` })
+      return
+    }
+
     gsap.fromTo(
       bar,
       { width: '0%' },

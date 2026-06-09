@@ -95,12 +95,12 @@ export default function Footer() {
             <span>
               {t('developedBy')}{' '}
               <a
-                href="https://github.com/cpl121"
+                href="https://github.com/1to1-Digital-Solutions"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-subtle hover:text-primary-400 transition-colors duration-150 font-medium"
               >
-                cpl121
+                1to1 Digital Solutions
               </a>
             </span>
             <span className="hidden sm:inline text-border-muted">·</span>

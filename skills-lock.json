@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "accessibility": {
+      "source": "addyosmani/web-quality-skills",
+      "sourceType": "github",
+      "skillPath": "skills/accessibility/SKILL.md",
+      "computedHash": "10e83284d3395ab5ec2f2db602b663480a37a4ff404d16510eefe86b034fcc1a"
+    },
     "awwwards-animations": {
       "source": "devmartinese/awwwards-animations-skill",
       "sourceType": "github",
@@ -15,6 +21,12 @@
       "source": "martinholovsky/claude-skills-generator",
       "sourceType": "github",
       "computedHash": "b7d401d70a6f6f2bd29bb36ee803564cb071cc43bf5701e32a5dedbf88cc1466"
+    },
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/seo-audit/SKILL.md",
+      "computedHash": "f2dc52130189068981f21e1c0bdc4471ac7cd9b08d8a1320604411aa0f950385"
     },
     "ui-ux-pro-max": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",

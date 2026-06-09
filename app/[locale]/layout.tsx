@@ -21,7 +21,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'meta' })
+
+  // 'as-needed' prefix: default locale (es) at '/', others at '/<locale>'.
+  const path = locale === routing.defaultLocale ? '/' : `/${locale}`
+  const siteName = locale === 'en' ? 'Tokyo by the Numbers' : 'Tokio en Cifras'
+
   return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://tokio-snapshot.vercel.app'),
     title: t('title'),
     description: t('description'),
     keywords: [
@@ -31,9 +37,19 @@ export async function generateMetadata({
       'Tokio PIB',
       'Japan demographics',
     ],
+    alternates: {
+      canonical: path,
+      languages: {
+        es: '/',
+        en: '/en',
+        'x-default': '/',
+      },
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),
+      url: path,
+      siteName,
       locale: locale === 'en' ? 'en_US' : 'es_ES',
       type: 'website',
     },
