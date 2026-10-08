@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import StatsSummary from '@/components/StatsSummary'
@@ -11,6 +11,7 @@ import { getStats } from '@/lib/stats.locale'
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
+  setRequestLocale(locale)
   const t = await getTranslations({ locale, namespace: 'page' })
   const { sections, navLinks, heroStats, kpiSummary } = getStats(locale)
 
