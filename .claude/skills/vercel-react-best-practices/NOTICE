@@ -1,0 +1,9 @@
+This skill is third-party content, vendored from an older upstream revision.
+
+Source:  https://github.com/vercel-labs/agent-skills (skills/react-best-practices)
+Author:  Vercel Engineering (SKILL.md metadata: author "vercel")
+License: MIT. The upstream repository ships no LICENSE file; it declares MIT in
+         its README ("## License — MIT") and in this skill's SKILL.md
+         frontmatter ("license: MIT"). LICENSE in this folder is the standard
+         MIT text with the author named above.
+Checked: 2026-10-08 against upstream commit 063bee94c3f4df8453406c830b0a7df0f2860278

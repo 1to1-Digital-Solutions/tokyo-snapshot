@@ -30,3 +30,10 @@ Thumbs.db
 # Claude / local tooling
 .agents/
 .vercel
+# Locally installed agent skills (symlinks into .agents/, which is not versioned)
+.agent/
+.claude/skills/accessibility
+.claude/skills/awwwards-animations
+.claude/skills/gsap
+.claude/skills/seo-audit
+.claude/settings.local.json
