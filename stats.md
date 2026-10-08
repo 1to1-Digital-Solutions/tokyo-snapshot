@@ -1,209 +1,209 @@
-# Tokio — Estadísticas Completas (2024–2025)
+# Tokyo — Complete Statistics (2024–2025)
 
 ---
 
-## Población
+## Population
 
-| Indicador                          | Cifra            | Año              |
-| ---------------------------------- | ---------------- | ---------------- |
-| Ciudad de Tokio (metrópoli)        | 14.195.730 hab.  | 2025             |
-| Área metropolitana (Gran Tokio)    | ~37.036.000 hab. | 2025             |
-| Gran Tokio (6 prefecturas vecinas) | ~41.000.000 hab. | 2024             |
-| Variación anual                    | −0,21%           | Tendencia actual |
-| Proporción sobre el total de Japón | ~11%             | 2024             |
-
----
-
-## Densidad de Población
-
-| Indicador                                             | Cifra            |
-| ----------------------------------------------------- | ---------------- |
-| Densidad media (metrópoli)                            | ~6.225 hab./km²  |
-| Distrito más denso (Toshima)                          | ~23.700 hab./km² |
-| Otros distritos superpoblados (Nakano, Taitō, Bunkyō) | >20.000 hab./km² |
-
-Tokio es la prefectura con mayor densidad de población de todo Japón.
+| Indicator                                 | Figure                | Year          |
+| ----------------------------------------- | --------------------- | ------------- |
+| City of Tokyo (metropolis)                | 14,195,730 residents  | 2025          |
+| Metropolitan area (Greater Tokyo)         | ~37,036,000 residents | 2025          |
+| Greater Tokyo (6 neighboring prefectures) | ~41,000,000 residents | 2024          |
+| Annual change                             | −0.21%                | Current trend |
+| Share of Japan's total population         | ~11%                  | 2024          |
 
 ---
 
-## Economía y PIB
+## Population Density
 
-| Indicador                                             | Cifra                            | Año      |
-| ----------------------------------------------------- | -------------------------------- | -------- |
-| PIB de la metrópoli de Tokio                          | ¥120,2 billones (~887.900 M USD) | EF2022   |
-| Proporción del PIB nacional de Japón                  | 21,2%                            | EF2022   |
-| PIB del Gran Tokio                                    | ~2,08 billones USD               | 2022     |
-| PIB per cápita de Tokio                               | ~¥8,43 M (~62.291 USD)           | EF2022   |
-| PIB per cápita de Japón                               | ~37.145 USD                      | 2024     |
-| Capitalización Bolsa de Tokio (TSE)                   | Top 3 mundial                    | 2024     |
-| Empresas cotizadas en la TSE                          | ~3.900                           | Nov 2024 |
-| Empresas con sede central en Tokio (capital >¥1.000M) | ~3.000 (50% del total nacional)  | 2024     |
+| Indicator                                       | Figure                |
+| ----------------------------------------------- | --------------------- |
+| Average density (metropolis)                    | ~6,225 residents/km²  |
+| Densest ward (Toshima)                          | ~23,700 residents/km² |
+| Other overcrowded wards (Nakano, Taitō, Bunkyō) | >20,000 residents/km² |
 
-Tokio es la 2.ª mayor economía metropolitana del mundo, solo por detrás de Nueva York.
+Tokyo is the prefecture with the highest population density in all of Japan.
 
 ---
 
-## Renta e Ingresos
+## Economy and GDP
 
-| Indicador                              | Cifra                                  |
-| -------------------------------------- | -------------------------------------- |
-| Salario bruto mensual medio (Tokio)    | ~¥576.000 (~3.840 USD)                 |
-| Salario bruto anual medio (Tokio)      | ~¥6.912.000 (~46.080 USD)              |
-| Salario mediano mensual (Tokio)        | ~¥517.000                              |
-| Salario anual medio en Japón           | ~¥4.600.000                            |
-| Ingreso neto mensual del hogar (Japón) | ¥524.343                               |
-| Salario mínimo por hora (Tokio)        | ¥1.163 (el más alto de Japón)          |
-| Coeficiente de Gini (desigualdad)      | 0,334 (desigualdad relativamente baja) |
+| Indicator                                           | Figure                             | Year     |
+| --------------------------------------------------- | ---------------------------------- | -------- |
+| GDP of the Tokyo metropolis                         | ¥120.2 trillion (~887,900 M USD)   | FY2022   |
+| Share of Japan's national GDP                       | 21.2%                              | FY2022   |
+| GDP of Greater Tokyo                                | ~2.08 trillion USD                 | 2022     |
+| GDP per capita of Tokyo                             | ~¥8.43 M (~62,291 USD)             | FY2022   |
+| GDP per capita of Japan                             | ~37,145 USD                        | 2024     |
+| Tokyo Stock Exchange (TSE) market capitalization    | Top 3 worldwide                    | 2024     |
+| Companies listed on the TSE                         | ~3,900                             | Nov 2024 |
+| Companies headquartered in Tokyo (capital >¥1,000M) | ~3,000 (50% of the national total) | 2024     |
 
-Los trabajadores de Tokio ganan aproximadamente un 50% más que la media nacional.
-
----
-
-## Tasa de Paro (Desempleo)
-
-| Indicador                      | Cifra              | Año      |
-| ------------------------------ | ------------------ | -------- |
-| Tasa de desempleo en Japón     | 2,5% (media anual) | 2024     |
-| Último dato mensual disponible | 2,6%               | Dic 2025 |
-
-Una de las tasas de paro más bajas entre los países de la OCDE. Tokio, como motor económico del país, se sitúa generalmente por debajo de la media nacional.
+Tokyo is the world's 2nd-largest metropolitan economy, behind only New York.
 
 ---
 
-## Establecimientos y Empresas
+## Income and Earnings
 
-| Indicador                                  | Cifra                                        |
-| ------------------------------------------ | -------------------------------------------- |
-| Total de empresas en Tokio                 | >660.000                                     |
-| Proporción sobre el total nacional         | >10%                                         |
-| Empleados en empresas de Tokio             | ~9,6 millones                                |
-| Pequeñas y medianas empresas               | 99% del total                                |
-| Empresas extranjeras operando en Tokio     | >75% de todas las empresas foráneas en Japón |
-| Empresas del Fortune 500 con sede en Tokio | Entre las más altas del mundo                |
+| Indicator                            | Figure                            |
+| ------------------------------------ | --------------------------------- |
+| Average gross monthly salary (Tokyo) | ~¥576,000 (~3,840 USD)            |
+| Average gross annual salary (Tokyo)  | ~¥6,912,000 (~46,080 USD)         |
+| Median monthly salary (Tokyo)        | ~¥517,000                         |
+| Average annual salary in Japan       | ~¥4,600,000                       |
+| Net monthly household income (Japan) | ¥524,343                          |
+| Minimum hourly wage (Tokyo)          | ¥1,163 (the highest in Japan)     |
+| Gini coefficient (inequality)        | 0.334 (relatively low inequality) |
 
----
-
-## Delincuencia y Seguridad
-
-| Indicador                                | Cifra                 | Fuente/Año |
-| ---------------------------------------- | --------------------- | ---------- |
-| Índice de criminalidad (Numbeo)          | 24,33 — **Bajo**      | 2025       |
-| Índice de seguridad (Numbeo)             | 75,67 — **Alto**      | 2025       |
-| Tasa de homicidios intencionales (Japón) | 0,78 por 100.000 hab. | 2024       |
-| Total de delitos registrados en Japón    | ~737.680              | 2024       |
-| Delitos registrados en Japón             | 703.351               | 2023       |
-
-Tokio figura sistemáticamente entre las megalópolis más seguras del mundo. Los delitos más comunes son el robo de bicicletas y carterismo en zonas turísticas.
+Tokyo workers earn roughly 50% more than the national average.
 
 ---
 
-## Coste de Vida
+## Unemployment Rate
 
-| Indicador                                  | Cifra               |
-| ------------------------------------------ | ------------------- |
-| Gastos mensuales medios (persona soltera)  | ~¥145.943/mes       |
-| Posición en ranking Mercer (coste de vida) | Puesto 49.º (2024)  |
-| Comida en restaurante económico            | ~¥1.000             |
-| Abono transporte mensual                   | ~¥10.000–15.000     |
-| Suministros (electricidad, agua, etc.)     | ~¥15.000–20.000/mes |
-| Penetración de internet (Japón)            | ~94%                |
+| Indicator                       | Figure                | Year     |
+| ------------------------------- | --------------------- | -------- |
+| Unemployment rate in Japan      | 2.5% (annual average) | 2024     |
+| Latest monthly figure available | 2.6%                  | Dec 2025 |
 
-La depreciación del yen desde 2022 ha hecho Tokio más asequible para extranjeros en comparación con décadas anteriores.
+One of the lowest unemployment rates among OECD countries. Tokyo, as the country's economic engine, generally sits below the national average.
 
 ---
 
-## Vivienda y Alquiler
+## Establishments and Businesses
 
-| Tipo de vivienda                                 | Alquiler mensual medio (2025) | Variación anual |
-| ------------------------------------------------ | ----------------------------- | --------------- |
-| Estudio / piso individual (≤30 m², 23 distritos) | ¥101.623                      | +8,9%           |
-| Piso para pareja (30–50 m², 23 distritos)        | ¥165.662                      | +9,8%           |
-| Piso de 3 habitaciones, centro de Tokio          | ~¥390.000                     | —               |
-| 1 dormitorio en Shinjuku                         | ~¥101.000                     | —               |
-| 1 dormitorio en Shibuya (zona más cara)          | ~¥128.000                     | —               |
-| Precio de compra de piso (por m²)                | ~¥1.150.000                   | —               |
-| Revalorización del suelo (2025 vs. 2024)         | +7,7%                         | 2025            |
-
-Los costes de entrada al alquiler (depósito, comisiones, etc.) equivalen habitualmente a 5–6 meses de renta.
+| Indicator                                    | Figure                                 |
+| -------------------------------------------- | -------------------------------------- |
+| Total businesses in Tokyo                    | >660,000                               |
+| Share of the national total                  | >10%                                   |
+| Employees at Tokyo businesses                | ~9.6 million                           |
+| Small and medium-sized enterprises           | 99% of the total                       |
+| Foreign companies operating in Tokyo         | >75% of all foreign companies in Japan |
+| Fortune 500 companies headquartered in Tokyo | Among the highest in the world         |
 
 ---
 
-## Turismo
+## Crime and Safety
 
-| Indicador                                                 | Cifra                  | Año      |
-| --------------------------------------------------------- | ---------------------- | -------- |
-| Visitantes totales a Tokio (nacionales e internacionales) | ~524 millones          | 2024     |
-| Variación anual                                           | +14%                   | vs. 2023 |
-| Turistas extranjeros llegados a Japón                     | 36,9 millones (récord) | 2024     |
-| % de visitantes a Japón que pasan por Tokio               | ~50%                   | 2024     |
-| Mes más concurrido                                        | Julio (~54 millones)   | 2024     |
-| Motivo principal de visita                                | Ocio/turismo (55%)     | —        |
-| Principal mercado emisor                                  | Corea del Sur          | 2024     |
-| Segundo mercado emisor                                    | Taiwán                 | 2024     |
+| Indicator                         | Figure                     | Source/Year |
+| --------------------------------- | -------------------------- | ----------- |
+| Crime index (Numbeo)              | 24.33 — **Low**            | 2025        |
+| Safety index (Numbeo)             | 75.67 — **High**           | 2025        |
+| Intentional homicide rate (Japan) | 0.78 per 100,000 residents | 2024        |
+| Total crimes recorded in Japan    | ~737,680                   | 2024        |
+| Crimes recorded in Japan          | 703,351                    | 2023        |
 
----
-
-## Esperanza de Vida
-
-| Indicador                                | Cifra           | Año        |
-| ---------------------------------------- | --------------- | ---------- |
-| Esperanza de vida masculina (Japón)      | 81,09 años      | 2024       |
-| Esperanza de vida femenina (Japón)       | 87,13 años      | 2024       |
-| Ranking mundial masculino                | 6.º en el mundo | 2024       |
-| Población mayor de 65 años (Japón)       | 29%             | 2024       |
-| Proyección de mayores de 65 años en 2065 | 38,4%           | Proyección |
-
-Japón tiene una de las esperanzas de vida más altas del mundo. Tokio, con acceso sanitario de primer nivel, se sitúa igual o por encima de la media nacional.
+Tokyo consistently ranks among the safest megacities in the world. The most common crimes are bicycle theft and pickpocketing in tourist areas.
 
 ---
 
-## Educación
+## Cost of Living
 
-| Indicador                                | Cifra                 | Fuente    |
-| ---------------------------------------- | --------------------- | --------- |
-| Tasa de alfabetización adulta (Japón)    | ~99%                  | Nacional  |
-| Titulados universitarios (25–34 años)    | 66%                   | OCDE 2024 |
-| Titulados universitarios (25–64 años)    | 57% (media OCDE: 42%) | OCDE 2024 |
-| Ranking OCDE en titulación universitaria | Top 5 mundial         | 2024      |
-| Adultos con nivel de alfabetización bajo | 11% (media OCDE: 27%) | OCDE      |
-| Universidades en Japón                   | >800                  | —         |
+| Indicator                                | Figure                |
+| ---------------------------------------- | --------------------- |
+| Average monthly expenses (single person) | ~¥145,943/month       |
+| Mercer cost-of-living ranking            | 49th place (2024)     |
+| Meal at a budget restaurant              | ~¥1,000               |
+| Monthly transit pass                     | ~¥10,000–15,000       |
+| Utilities (electricity, water, etc.)     | ~¥15,000–20,000/month |
+| Internet penetration (Japan)             | ~94%                  |
 
-Tokio alberga algunas de las universidades más prestigiosas de Asia, incluyendo la Universidad de Tokio (la mejor valorada de Asia).
-
----
-
-## Transporte
-
-| Indicador                           | Cifra                              | Año               |
-| ----------------------------------- | ---------------------------------- | ----------------- |
-| Viajeros diarios del Metro de Tokio | ~6,84 millones                     | EF2024            |
-| Viajeros anuales del Metro de Tokio | ~2.500 millones                    | EF2024            |
-| Variación anual de viajeros         | +5%                                | EF2024 vs. EF2023 |
-| Líneas del Metro de Tokio           | 9 líneas / 180 estaciones / 195 km | —                 |
-
-El Metro de Tokio es solo uno de varios operadores ferroviarios (JR East, Toei, ferrocarriles privados, autobuses). La red integrada de Tokio es la más utilizada del mundo.
+The yen's depreciation since 2022 has made Tokyo more affordable for foreigners compared with previous decades.
 
 ---
 
-## Población Extranjera
+## Housing and Rent
 
-| Indicador                                | Cifra                             | Año       |
-| ---------------------------------------- | --------------------------------- | --------- |
-| Total de residentes extranjeros en Tokio | >647.000                          | 2024      |
-| % sobre la población total de Tokio      | ~4,5–4,6%                         | 2024      |
-| En distritos centrales                   | ~10% (1 de cada 10 residentes)    | Reciente  |
-| Ciudadanos chinos (grupo mayoritario)    | >257.000                          | Ene 2024  |
-| Segundo grupo                            | Coreanos                          | 2024      |
-| Tercer grupo                             | Vietnamitas                       | 2024      |
-| Distritos con mayor concentración        | Shinjuku, Toshima, Arakawa (>10%) | —         |
-| Total de extranjeros en Japón            | ~3,8 millones (récord histórico)  | 2024–2025 |
+| Housing type                                 | Average monthly rent (2025) | Annual change |
+| -------------------------------------------- | --------------------------- | ------------- |
+| Studio / single apartment (≤30 m², 23 wards) | ¥101,623                    | +8.9%         |
+| Apartment for a couple (30–50 m², 23 wards)  | ¥165,662                    | +9.8%         |
+| 3-bedroom apartment, central Tokyo           | ~¥390,000                   | —             |
+| 1-bedroom in Shinjuku                        | ~¥101,000                   | —             |
+| 1-bedroom in Shibuya (most expensive area)   | ~¥128,000                   | —             |
+| Apartment purchase price (per m²)            | ~¥1,150,000                 | —             |
+| Land price appreciation (2025 vs. 2024)      | +7.7%                       | 2025          |
 
----
-
-## Resumen Ejecutivo
-
-Tokio es el área metropolitana más poblada del mundo y una de las más relevantes económicamente, generando más del 21% del PIB de Japón. Mantiene una de las tasas de criminalidad más bajas entre las grandes ciudades del planeta, una esperanza de vida entre las más altas del mundo y un sistema educativo de referencia global. A pesar del declive demográfico de Japón, Tokio sigue atrayendo migración interna e internacional en cifras récord.
+Move-in rental costs (deposit, fees, etc.) typically amount to 5–6 months of rent.
 
 ---
 
-_Fuentes: Tokyo Metropolitan Government, OCDE, Banco Mundial, Numbeo, Agencia Nacional de Policía de Japón, Tokyo Metro, JETRO, Ministerio de Salud, Trabajo y Bienestar de Japón._
+## Tourism
+
+| Indicator                                            | Figure                | Year     |
+| ---------------------------------------------------- | --------------------- | -------- |
+| Total visitors to Tokyo (domestic and international) | ~524 million          | 2024     |
+| Annual change                                        | +14%                  | vs. 2023 |
+| Foreign tourists arriving in Japan                   | 36.9 million (record) | 2024     |
+| % of visitors to Japan who pass through Tokyo        | ~50%                  | 2024     |
+| Busiest month                                        | July (~54 million)    | 2024     |
+| Main reason for visiting                             | Leisure/tourism (55%) | —        |
+| Top source market                                    | South Korea           | 2024     |
+| Second source market                                 | Taiwan                | 2024     |
+
+---
+
+## Life Expectancy
+
+| Indicator                             | Figure           | Year       |
+| ------------------------------------- | ---------------- | ---------- |
+| Male life expectancy (Japan)          | 81.09 years      | 2024       |
+| Female life expectancy (Japan)        | 87.13 years      | 2024       |
+| Male world ranking                    | 6th in the world | 2024       |
+| Population aged 65+ (Japan)           | 29%              | 2024       |
+| Projected population aged 65+ in 2065 | 38.4%            | Projection |
+
+Japan has one of the highest life expectancies in the world. Tokyo, with top-tier healthcare access, is at or above the national average.
+
+---
+
+## Education
+
+| Indicator                             | Figure                  | Source    |
+| ------------------------------------- | ----------------------- | --------- |
+| Adult literacy rate (Japan)           | ~99%                    | National  |
+| University graduates (25–34 years)    | 66%                     | OECD 2024 |
+| University graduates (25–64 years)    | 57% (OECD average: 42%) | OECD 2024 |
+| OECD ranking in university attainment | Top 5 worldwide         | 2024      |
+| Adults with low literacy levels       | 11% (OECD average: 27%) | OECD      |
+| Universities in Japan                 | >800                    | —         |
+
+Tokyo is home to some of Asia's most prestigious universities, including the University of Tokyo (Asia's top-ranked university).
+
+---
+
+## Transportation
+
+| Indicator                        | Figure                          | Year              |
+| -------------------------------- | ------------------------------- | ----------------- |
+| Daily riders on the Tokyo Metro  | ~6.84 million                   | FY2024            |
+| Annual riders on the Tokyo Metro | ~2,500 million                  | FY2024            |
+| Annual change in ridership       | +5%                             | FY2024 vs. FY2023 |
+| Tokyo Metro lines                | 9 lines / 180 stations / 195 km | —                 |
+
+The Tokyo Metro is just one of several rail operators (JR East, Toei, private railways, buses). Tokyo's integrated network is the most heavily used in the world.
+
+---
+
+## Foreign Population
+
+| Indicator                            | Figure                            | Year      |
+| ------------------------------------ | --------------------------------- | --------- |
+| Total foreign residents in Tokyo     | >647,000                          | 2024      |
+| % of Tokyo's total population        | ~4.5–4.6%                         | 2024      |
+| In central wards                     | ~10% (1 in 10 residents)          | Recent    |
+| Chinese nationals (largest group)    | >257,000                          | Jan 2024  |
+| Second-largest group                 | Koreans                           | 2024      |
+| Third-largest group                  | Vietnamese                        | 2024      |
+| Wards with the highest concentration | Shinjuku, Toshima, Arakawa (>10%) | —         |
+| Total foreigners in Japan            | ~3.8 million (all-time record)    | 2024–2025 |
+
+---
+
+## Executive Summary
+
+Tokyo is the world's most populous metropolitan area and one of the most economically significant, generating more than 21% of Japan's GDP. It maintains one of the lowest crime rates among the world's major cities, a life expectancy among the highest in the world, and an education system that is a global benchmark. Despite Japan's demographic decline, Tokyo continues to attract internal and international migration in record numbers.
+
+---
+
+_Sources: Tokyo Metropolitan Government, OECD, World Bank, Numbeo, National Police Agency of Japan, Tokyo Metro, JETRO, Japan Ministry of Health, Labour and Welfare._

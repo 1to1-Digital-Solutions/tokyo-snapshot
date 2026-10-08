@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../globals.css'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getTranslations } from 'next-intl/server'
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import SmoothScroll from '@/components/SmoothScroll'
@@ -73,6 +73,8 @@ export default async function LocaleLayout({
     notFound()
   }
 
+  // Lets next-intl render this locale statically instead of reading headers.
+  setRequestLocale(locale)
   const messages = await getMessages()
 
   return (

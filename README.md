@@ -1,61 +1,51 @@
 # 東京 Tokyo by the Numbers
 
-> Comprehensive Tokyo statistics 2024–2025 — the world's largest city under the microscope.
+A single-page data site about Tokyo: population, economy, safety, cost of living, housing,
+tourism, transport, health, education and foreign residents, with 2024–2025 figures and
+their sources. It is bilingual (Spanish by default, English at `/en`), statically generated
+and animated on scroll.
 
-A data landing page built with Next.js 15, GSAP and Lenis that digs deep into the numbers that define Tokyo: from its 37-million-person megalopolis to one of the lowest crime rates in the world.
+Live: <https://tokio-snapshot.vercel.app>
 
----
+## What is on the page
 
-## Key stats
+- **Hero** with the four headline figures: 37 million people in the metropolitan area, the
+  world's second-largest urban economy, a crime index of 24.33 (Numbeo 2025) and a female life
+  expectancy of 87 years.
+- **Key indicators**: four KPI cards that put those numbers in context.
+- **14 sections**, each a table of indicators with notes: population, population density,
+  economy & GDP, income & wages, unemployment, businesses, crime & safety, cost of living,
+  housing & rent, tourism, transport, life expectancy, education and foreign residents.
+- **Footer** with the sources (Tokyo Metropolitan Government, OECD, World Bank, Numbeo,
+  National Police Agency, Tokyo Metro, JETRO, Ministry of Health, Mercer…) and a disclaimer.
 
-| Indicator                      | Figure                                    |
-| ------------------------------ | ----------------------------------------- |
-| Population (metropolitan area) | **37 million** residents                  |
-| Global urban economy           | **2nd place** by metropolitan GDP         |
-| Crime index                    | **24.33** — rated Low (Numbeo 2025)       |
-| Female life expectancy         | **87 years** — 6th worldwide male ranking |
-
-## Sections
-
-The site covers **14 data categories** with tables, visual indicators and comparative context:
-
-1. **Population** — historical trends and projections for Greater Tokyo
-2. **Population Density** — breakdown by districts and prefectures
-3. **Economy & GDP** — metropolitan GDP, sectors and growth
-4. **Income & Wages** — average salary, distribution and relative cost
-5. **Unemployment Rate** — historical unemployment and international comparison
-6. **Businesses & Companies** — business fabric and dominant sectors
-7. **Crime & Safety** — crime statistics and public safety
-8. **Cost of Living** — price indices, rent and purchasing power
-9. **Housing & Rent** — real estate market and price trends
-10. **Tourism** — arrivals, overnight stays and top attractions
-11. **Transportation** — metro network, trains and urban mobility
-12. **Life Expectancy** — health data and longevity
-13. **Education** — enrolment rates and academic outcomes
-14. **Foreign Population** — communities and breakdown by nationality
-
----
+The figures and their sources were gathered in [`stats.md`](stats.md); the site's data lives in
+`lib/stats.ts` (Spanish) and `lib/stats.en.ts` (English).
 
 ## Tech stack
 
-| Technology           | Version | Purpose                              |
-| -------------------- | ------- | ------------------------------------ |
-| Next.js              | 15.1    | Framework — App Router, SSG          |
-| React                | 19      | UI                                   |
-| TypeScript           | 5       | Static typing                        |
-| Tailwind CSS         | 3.4     | Styles                               |
-| GSAP + ScrollTrigger | 3.14    | Animations and scroll-driven effects |
-| @gsap/react          | 2.1     | `useGSAP` hook for React 18+         |
-| Lenis                | 1.3     | Smooth scroll                        |
-| next-intl            | 4.x     | Internationalisation (ES / EN)       |
+| Technology           | Version | Purpose                                         |
+| -------------------- | ------- | ----------------------------------------------- |
+| Next.js              | 16      | App Router, static generation of both locales   |
+| React                | 19      | UI                                              |
+| TypeScript           | 5       | Static typing                                   |
+| Tailwind CSS         | 3.4     | Styles (design tokens in `tailwind.config.ts`)  |
+| next-intl            | 4       | Spanish / English routing and messages          |
+| GSAP + ScrollTrigger | 3.15    | Entrance and scroll-driven animations           |
+| @gsap/react          | 2.1     | `useGSAP` hook                                  |
+| Lenis                | 1.3     | Smooth scroll, synced with ScrollTrigger        |
+| ESLint + Prettier    | 10 / 3  | Linting (flat config) and formatting, run in CI |
 
 ## Animations
 
-- **Hero entrance** — sequential timeline: kanji, heading, stat badges and scroll cue
-- **Scroll progress bar** — thin red line at the top that grows with scroll
-- **ScrollReveal** — fade-up with stagger on sections and cards as they enter the viewport
-- **SectionHeader** — accent bar with `scaleY`, sliding title and chained description timeline
-- **Smooth scroll** — Lenis with lerp 0.08, integrated with ScrollTrigger via `lenis.on('scroll', ScrollTrigger.update)`
+- **Hero entrance**: a timeline for the kanji, heading, stat badges and scroll cue.
+- **Scroll progress bar**: a thin red line at the top that grows as you scroll.
+- **ScrollReveal**: staggered fade-up of sections and cards as they enter the viewport.
+- **SectionHeader**: accent bar, sliding title and description on a chained timeline.
+- **Smooth scroll**: Lenis (lerp 0.08) feeding `ScrollTrigger.update`.
+
+With `prefers-reduced-motion`, the hero, the reveals and the bars skip their animation and
+show content in its final state, and `globals.css` cuts CSS transitions.
 
 ## Internationalisation
 
@@ -64,20 +54,27 @@ The site covers **14 data categories** with tables, visual indicators and compar
 | `/`   | Spanish (default) |
 | `/en` | English           |
 
-Language is switched via the `ES / EN` toggle in the navbar. All UI strings live in `messages/es.json` and `messages/en.json`. Statistical data has parallel Spanish (`lib/stats.ts`) and English (`lib/stats.en.ts`) versions.
-
----
+`localePrefix` is `as-needed`, so `/es` redirects to `/`. The `ES / EN` toggle in the navbar
+switches language. UI strings live in `messages/es.json` and `messages/en.json`; routing is in
+`i18n/routing.ts` and the locale detection runs in `proxy.ts` (Next.js 16's name for
+middleware).
 
 ## Development
+
+Requires Node.js 20.19 or later.
 
 ```bash
 npm install
 npm run dev          # http://localhost:3000
 npm run build        # production build
+npm run start        # serve the production build
 npm run lint         # ESLint
-npm run format       # Prettier
-npm run format:check # Prettier check (CI)
+npm run format       # Prettier, write
+npm run format:check # Prettier, check (CI)
 ```
+
+CI (`.github/workflows/ci.yml`) runs lint and the format check on every pull request to
+`main`. Dependabot opens weekly npm update PRs.
 
 ## Project structure
 
@@ -85,35 +82,37 @@ npm run format:check # Prettier check (CI)
 app/
 ├── layout.tsx              # Root pass-through layout
 ├── [locale]/
-│   ├── layout.tsx          # Locale layout — html/body, NextIntlClientProvider
-│   └── page.tsx            # Main page — 14 stats sections
-└── globals.css
+│   ├── layout.tsx          # html/body, metadata, NextIntlClientProvider
+│   └── page.tsx            # The page: hero, KPIs and the 14 sections
+├── robots.ts, sitemap.ts   # SEO routes
+└── globals.css             # Tokens, focus rings, reduced motion
 
-components/
-├── Hero.tsx                # Hero with GSAP timeline animation
-├── Navbar.tsx              # Fixed navbar with hamburger menu + language switcher
-├── LanguageSwitcher.tsx    # ES / EN toggle
-├── StatsSummary.tsx        # KPI highlight cards
-├── SectionHeader.tsx       # Animated section heading
-├── StatsTable.tsx          # Data table
-├── ScrollReveal.tsx        # Scroll-triggered animation wrapper
-├── ScrollProgress.tsx      # Scroll progress bar
-├── SmoothScroll.tsx        # Lenis provider
-├── KpiCard.tsx             # Key indicator card
-├── AnimatedBar.tsx         # Data visualisation bar
-└── Footer.tsx              # Sources, credits, disclaimer
+components/                 # Hero, Navbar, LanguageSwitcher, StatsSummary, SectionHeader,
+                            # StatsTable, KpiCard, AnimatedBar, ScrollReveal,
+                            # ScrollProgress, SmoothScroll, Footer
 
 lib/
-├── gsap.ts                 # GSAP setup and exports
-├── stats.ts                # Spanish statistical data
-├── stats.en.ts             # English statistical data
-└── stats.locale.ts         # getStats(locale) helper
+├── gsap.ts                 # GSAP setup and shared defaults
+├── stats.ts                # Spanish data
+├── stats.en.ts             # English data
+└── stats.locale.ts         # getStats(locale)
 
-i18n/
-├── routing.ts              # next-intl routing config
-└── request.ts              # next-intl server config
-
-messages/
-├── es.json                 # Spanish UI strings
-└── en.json                 # English UI strings
+i18n/                       # next-intl routing and request config
+messages/                   # UI strings per locale
+proxy.ts                    # next-intl locale routing
+docs/design-system.md       # Colours, type, spacing and component rules
+stats.md                    # The researched figures with their sources
 ```
+
+## Agent skills
+
+`.claude/skills/` holds three third-party skills used while building the site with Claude
+Code: `find-skills` (vercel-labs/skills), `ui-ux-pro-max` (nextlevelbuilder/ui-ux-pro-max-skill)
+and `vercel-react-best-practices` (vercel-labs/agent-skills). All three are MIT-licensed; each
+folder carries its upstream `LICENSE` and a `NOTICE` with the source. Other skills listed in
+`skills-lock.json` are installed locally with `npx skills` and are not versioned here.
+
+## License
+
+The site's code is MIT-licensed, see [LICENSE](LICENSE). The vendored skills keep their own
+licenses, as above. The statistics belong to the sources cited on the page.
