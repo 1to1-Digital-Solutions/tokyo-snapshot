@@ -15,22 +15,23 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations({ locale, namespace: 'page' })
   const { sections, navLinks, heroStats, kpiSummary } = getStats(locale)
 
+  // Section ids double as URL anchors (#poblacion, ...), so they stay as they are.
   const getSection = (id: string) => sections.find((s) => s.id === id)!
 
-  const poblacion = getSection('poblacion')
-  const densidad = getSection('densidad')
-  const economia = getSection('economia')
-  const renta = getSection('renta')
-  const desempleo = getSection('desempleo')
-  const empresas = getSection('empresas')
-  const seguridad = getSection('seguridad')
-  const costeVida = getSection('coste-vida')
-  const vivienda = getSection('vivienda')
-  const turismo = getSection('turismo')
-  const transporte = getSection('transporte')
-  const esperanzaVida = getSection('esperanza-vida')
-  const educacion = getSection('educacion')
-  const extranjeros = getSection('extranjeros')
+  const population = getSection('poblacion')
+  const density = getSection('densidad')
+  const economy = getSection('economia')
+  const income = getSection('renta')
+  const unemployment = getSection('desempleo')
+  const businesses = getSection('empresas')
+  const safety = getSection('seguridad')
+  const costOfLiving = getSection('coste-vida')
+  const housing = getSection('vivienda')
+  const tourism = getSection('turismo')
+  const transport = getSection('transporte')
+  const lifeExpectancy = getSection('esperanza-vida')
+  const education = getSection('educacion')
+  const foreignResidents = getSection('extranjeros')
 
   return (
     <main id="main-content" className="min-h-screen bg-surface-base">
@@ -40,78 +41,78 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       {/* ── Main content sections ──────────────────────────────────── */}
       <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Población / Population */}
+        {/* Population */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={poblacion.id}
-              icon={poblacion.icon}
-              title={poblacion.title}
-              description={poblacion.description}
+              id={population.id}
+              icon={population.icon}
+              title={population.title}
+              description={population.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={poblacion.rows} />
+            <StatsTable rows={population.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Densidad / Density */}
+        {/* Population density */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={densidad.id}
-              icon={densidad.icon}
-              title={densidad.title}
-              description={densidad.description}
+              id={density.id}
+              icon={density.icon}
+              title={density.title}
+              description={density.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={densidad.rows} />
+            <StatsTable rows={density.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Economía */}
+        {/* Economy & GDP */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={economia.id}
-              icon={economia.icon}
-              title={economia.title}
-              description={economia.description}
+              id={economy.id}
+              icon={economy.icon}
+              title={economy.title}
+              description={economy.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={economia.rows} />
+            <StatsTable rows={economy.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Renta */}
+        {/* Income & wages */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={renta.id}
-              icon={renta.icon}
-              title={renta.title}
-              description={renta.description}
+              id={income.id}
+              icon={income.icon}
+              title={income.title}
+              description={income.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={renta.rows} />
+            <StatsTable rows={income.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Desempleo */}
+        {/* Unemployment */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={desempleo.id}
-              icon={desempleo.icon}
-              title={desempleo.title}
-              description={desempleo.description}
+              id={unemployment.id}
+              icon={unemployment.icon}
+              title={unemployment.title}
+              description={unemployment.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={desempleo.rows} />
+            <StatsTable rows={unemployment.rows} />
           </ScrollReveal>
           <ScrollReveal delay={0.15} className="mt-6">
             <div className="flex items-start gap-3 bg-primary-600/5 border border-primary-600/15 rounded-card p-4">
@@ -129,33 +130,33 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </ScrollReveal>
         </section>
 
-        {/* Empresas */}
+        {/* Businesses */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={empresas.id}
-              icon={empresas.icon}
-              title={empresas.title}
-              description={empresas.description}
+              id={businesses.id}
+              icon={businesses.icon}
+              title={businesses.title}
+              description={businesses.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={empresas.rows} />
+            <StatsTable rows={businesses.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Seguridad */}
+        {/* Crime & safety */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={seguridad.id}
-              icon={seguridad.icon}
-              title={seguridad.title}
-              description={seguridad.description}
+              id={safety.id}
+              icon={safety.icon}
+              title={safety.title}
+              description={safety.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={seguridad.rows} />
+            <StatsTable rows={safety.rows} />
           </ScrollReveal>
           <ScrollReveal stagger delay={0.1} className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="card p-5">
@@ -177,48 +178,48 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </ScrollReveal>
         </section>
 
-        {/* Coste de Vida */}
+        {/* Cost of living */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={costeVida.id}
-              icon={costeVida.icon}
-              title={costeVida.title}
-              description={costeVida.description}
+              id={costOfLiving.id}
+              icon={costOfLiving.icon}
+              title={costOfLiving.title}
+              description={costOfLiving.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={costeVida.rows} />
+            <StatsTable rows={costOfLiving.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Vivienda */}
+        {/* Housing & rent */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={vivienda.id}
-              icon={vivienda.icon}
-              title={vivienda.title}
-              description={vivienda.description}
+              id={housing.id}
+              icon={housing.icon}
+              title={housing.title}
+              description={housing.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={vivienda.rows} />
+            <StatsTable rows={housing.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Turismo */}
+        {/* Tourism */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={turismo.id}
-              icon={turismo.icon}
-              title={turismo.title}
-              description={turismo.description}
+              id={tourism.id}
+              icon={tourism.icon}
+              title={tourism.title}
+              description={tourism.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={turismo.rows} />
+            <StatsTable rows={tourism.rows} />
           </ScrollReveal>
           <ScrollReveal delay={0.15} className="mt-6">
             <div className="card p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -237,18 +238,18 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </ScrollReveal>
         </section>
 
-        {/* Transporte */}
+        {/* Transport */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={transporte.id}
-              icon={transporte.icon}
-              title={transporte.title}
-              description={transporte.description}
+              id={transport.id}
+              icon={transport.icon}
+              title={transport.title}
+              description={transport.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={transporte.rows} />
+            <StatsTable rows={transport.rows} />
           </ScrollReveal>
           <ScrollReveal stagger delay={0.1} className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
@@ -264,48 +265,48 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </ScrollReveal>
         </section>
 
-        {/* Esperanza de Vida */}
+        {/* Life expectancy */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={esperanzaVida.id}
-              icon={esperanzaVida.icon}
-              title={esperanzaVida.title}
-              description={esperanzaVida.description}
+              id={lifeExpectancy.id}
+              icon={lifeExpectancy.icon}
+              title={lifeExpectancy.title}
+              description={lifeExpectancy.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={esperanzaVida.rows} />
+            <StatsTable rows={lifeExpectancy.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Educación */}
+        {/* Education */}
         <section className="py-16 border-b border-surface-border">
           <ScrollReveal>
             <SectionHeader
-              id={educacion.id}
-              icon={educacion.icon}
-              title={educacion.title}
-              description={educacion.description}
+              id={education.id}
+              icon={education.icon}
+              title={education.title}
+              description={education.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={educacion.rows} />
+            <StatsTable rows={education.rows} />
           </ScrollReveal>
         </section>
 
-        {/* Extranjeros */}
+        {/* Foreign residents */}
         <section className="py-16">
           <ScrollReveal>
             <SectionHeader
-              id={extranjeros.id}
-              icon={extranjeros.icon}
-              title={extranjeros.title}
-              description={extranjeros.description}
+              id={foreignResidents.id}
+              icon={foreignResidents.icon}
+              title={foreignResidents.title}
+              description={foreignResidents.description}
             />
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <StatsTable rows={extranjeros.rows} />
+            <StatsTable rows={foreignResidents.rows} />
           </ScrollReveal>
           <ScrollReveal delay={0.15} className="mt-6">
             <div className="card p-5">
