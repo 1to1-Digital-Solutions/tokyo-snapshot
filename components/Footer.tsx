@@ -95,7 +95,7 @@ export default function Footer() {
             <span>
               {t('developedBy')}{' '}
               <a
-                href="https://github.com/1to1-Digital-Solutions"
+                href="https://1to1digital.solutions/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-subtle hover:text-primary-400 transition-colors duration-150 font-medium"
